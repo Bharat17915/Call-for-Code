@@ -1,0 +1,84 @@
+*{
+    margin:  0;
+    padding: 0;   
+}
+
+/*Side nav*/
+.sidenav-item{
+    justify-content: flex-start;
+    align-items: center;
+    display: flex !important;
+    padding-inline-start: 0px !important;
+}
+
+/*Header page*/
+.header-search{
+    padding: 2rem;
+    padding-inline-start: 6rem;
+}
+.logout-button{
+    padding-top: 2rem;
+    padding-inline-start: 4rem;
+}
+
+.header-wallpaper {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.blurred-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/public/images/calm-compass-wallpaper.jpg');
+    background-size: cover;
+    filter: blur(1.5px);
+    z-index: 0;
+}
+
+.wallpaper-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 8rem;
+    font-size: larger;
+}
+
+.wallpaper-text{
+    color: black;
+    background: lavender;
+    width: fit-content;
+}
+
+/*Profile page*/
+.profile-name{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-inline-start: 1rem;
+    font-size: large;
+    font-weight: bold
+}
+
+/*Medical history page*/
+.page-main-div{
+    padding-inline-start: 6rem;
+    padding-top: 2rem;
+    padding-inline-end: 2rem;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+}
+
+/*Blogs page*/
+.blogs-main-div{
+    padding-inline-start: 6rem;
+    padding-top: 2rem;
+    padding-inline-end: 2rem;
+    width: 100%;
+}
