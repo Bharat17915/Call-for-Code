@@ -15,7 +15,7 @@ The Medical Assistant Chatbot is a Python-based web application designed to assi
 
 - **Backend**: Flask
 - **Database**: SQLite (with SQLAlchemy for ORM)
-- **AI Integration**: IBM WatsonX (AssistantV2)
+- **AI Integration**: IBM WatsonX.ai, IBM Watsonx Governance
 - **Frontend**: HTML, CSS, JavaScript
 - **Image Processing**: Pillow (for image handling)
 
