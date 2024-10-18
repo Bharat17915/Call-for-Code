@@ -30,7 +30,7 @@ export default function SideNav () {
 
         {/* Menu Items */}
         <Menu.Item as={Link} to="/" >
-            <Popup content='Home' size='mini' position='right' className='sidenav-item' trigger={<div>
+            <Popup content='Home' size='mini' position='right center' className='sidenav-item' trigger={<div>
                 <Icon size='big' name="home" />
                 {expanded && <span style={{ marginLeft: '10px' }}>Home</span>}
                 </div>}
@@ -38,35 +38,42 @@ export default function SideNav () {
             
         </Menu.Item>
         <Menu.Item as={Link} to="/helper">
-            <Popup content='Helper' size='mini' position='right' className='sidenav-item' trigger={<div>
+            <Popup content='Helper' size='mini' position='right center' className='sidenav-item' trigger={<div>
                 <Icon size='big' name="rocketchat" />
                 {expanded && <span style={{ marginLeft: '10px' }}>Helper</span>}
                 </div>}
             />
         </Menu.Item>
         <Menu.Item as={Link} to="/document-uploader">
-            <Popup content='Document uploader' size='mini' position='right' className='sidenav-item' trigger={<div>
+            <Popup content='Document uploader' size='mini' position='right center' className='sidenav-item' trigger={<div>
                 <Icon size='big' name="upload" />
                 {expanded && <span style={{ marginLeft: '10px' }}>Document uploader</span>}
                 </div>}
             />
         </Menu.Item>
         <Menu.Item as={Link} to="/medical-history">
-            <Popup content='Medical history' size='mini' position='right' className='sidenav-item' trigger={<div>
+            <Popup content='Medical history' size='mini' position='right center' className='sidenav-item' trigger={<div>
                 <Icon size='big' name="history" />
                 {expanded && <span style={{ marginLeft: '10px' }}>Medical history</span>}
                 </div>}
             />
         </Menu.Item>
+        <Menu.Item as={Link} to="/appointments">
+            <Popup content='Appointments' size='mini' position='right center' className='sidenav-item' trigger={<div>
+                <Icon size='big' name="calendar" />
+                {expanded && <span style={{ marginLeft: '10px' }}>Appointments</span>}
+                </div>}
+            />
+        </Menu.Item>
         <Menu.Item as={Link} to="/profile">
-            <Popup content='Profile' size='mini' position='right' className='sidenav-item' trigger={<div>
+            <Popup content='Profile' size='mini' position='right center' className='sidenav-item' trigger={<div>
                 <Icon size='big' name="user" />
                 {expanded && <span style={{ marginLeft: '10px' }}>Profile</span>}
                 </div>}
             />
         </Menu.Item>
         <Menu.Item as={Link} to="/blogs">
-            <Popup content='Blogs' size='mini' position='right' className='sidenav-item' trigger={<div>
+            <Popup content='Blogs' size='mini' position='right center' className='sidenav-item' trigger={<div>
                 <Icon size='big' name="blogger" />
                 {expanded && <span style={{ marginLeft: '10px' }}>Blogs</span>}
                 </div>}
