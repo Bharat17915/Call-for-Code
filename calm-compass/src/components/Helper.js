@@ -1,5 +1,5 @@
 import React from 'react';
-import { Message, Container, Segment, Search, Icon } from 'semantic-ui-react';
+import { Message, Container, Segment, Search, Icon, List, ListItem, ListContent, ListHeader, ListDescription, ListIcon, Header } from 'semantic-ui-react';
 
 const ChatBubble = ({ message, isUser }) => {
     return (
@@ -72,23 +72,91 @@ export default function Helper () {
         ];
 
     return (
-        <Container>
-            <Segment style={{ maxHeight: '400px', overflowY: 'scroll', padding: '20px' }}>
-            {messages.map((msg, index) => (
-                <>
-                <ChatBubble key={index} message={msg.text} isUser={msg.isUser} />
-                <br/>
-                </>
-            ))}
-            </Segment>
-            <Segment style={{width:'100%', display:'flex'}}>
-                <div style={{width:'95%'}}>
-                    <Search input={{ fluid: true }} placeholder='Ask you query in your language'/>
-                </div>
-                <div style={{width:'5%', textAlign:'end'}}>
-                    <Icon name='microphone' size='big'/>
-                </div>   
-            </Segment>
-        </Container>
+        <div style={{width:'100%', display:'flex', paddingInlineStart:'6rem', paddingInlineEnd:'2rem'}}>
+            <div style={{width:'60%'}}>          
+                <Container>
+                    <Segment style={{ maxHeight: '400px', overflowY: 'scroll', padding: '20px' }}>
+                    {messages.map((msg, index) => (
+                        <>
+                        <ChatBubble key={index} message={msg.text} isUser={msg.isUser} />
+                        <br/>
+                        </>
+                    ))}
+                    </Segment>
+                    <Segment style={{width:'100%', display:'flex'}}>
+                        <div style={{width:'95%'}}>
+                            <Search input={{ fluid: true }} placeholder='Ask your query in your language'/>
+                        </div>
+                        <div style={{width:'5%', textAlign:'end'}}>
+                            <Icon name='microphone' size='big'/>
+                        </div>   
+                    </Segment>
+                </Container>
+            </div>
+            <div style={{width:'40%', paddingInlineStart:'2rem'}}>
+                <Container>
+                    <Segment>
+                        <Header>Chat History</Header>
+                        <List divided relaxed>
+                            <ListItem>
+                            <ListIcon name='folder' size='large' verticalAlign='middle' />
+                            <ListContent>
+                                <ListHeader as='a'>What to eat if diagonised with diabetes...</ListHeader>
+                                <ListDescription as='a'>Updated 20 mins ago</ListDescription>
+                            </ListContent>
+                            </ListItem>
+                            <br/>
+                            <ListItem>
+                            <ListIcon name='folder' size='large' verticalAlign='middle' />
+                            <ListContent>
+                                <ListHeader as='a'>Posible reasons for allergies...</ListHeader>
+                                <ListDescription as='a'>Updated 2 days ago</ListDescription>
+                            </ListContent>
+                            </ListItem>
+                            <br/>
+                            <ListItem>
+                            <ListIcon name='folder' size='large' verticalAlign='middle' />
+                            <ListContent>
+                                <ListHeader as='a'>Pregancy tips and diet to follow...</ListHeader>
+                                <ListDescription as='a'>Updated 4 days ago</ListDescription>
+                            </ListContent>
+                            </ListItem>
+                            <br/>
+                            <ListItem>
+                            <ListIcon name='folder' size='large' verticalAlign='middle' />
+                            <ListContent>
+                                <ListHeader as='a'>Yoga for everyday fit life...</ListHeader>
+                                <ListDescription as='a'>Updated 2 weeks ago</ListDescription>
+                            </ListContent>
+                            </ListItem>
+                            <br/>
+                            <ListItem>
+                            <ListIcon name='folder' size='large' verticalAlign='middle' />
+                            <ListContent>
+                                <ListHeader as='a'>Yoga for everyday fit life...</ListHeader>
+                                <ListDescription as='a'>Updated 2 weeks ago</ListDescription>
+                            </ListContent>
+                            </ListItem>
+                            <br/>
+                            <ListItem>
+                            <ListIcon name='folder' size='large' verticalAlign='middle' />
+                            <ListContent>
+                                <ListHeader as='a'>Benifits of eating almonds...</ListHeader>
+                                <ListDescription as='a'>Updated 3 weeks ago</ListDescription>
+                            </ListContent>
+                            </ListItem>
+                            <br/>
+                            <ListItem>
+                            <ListIcon name='folder' size='large' verticalAlign='middle' />
+                            <ListContent>
+                                <ListHeader as='a'>Benifits of eating dates...</ListHeader>
+                                <ListDescription as='a'>Updated 3 weeks ago</ListDescription>
+                            </ListContent>
+                            </ListItem>
+                        </List>
+                    </Segment>
+                </Container>
+            </div>
+        </div>
     );
 }

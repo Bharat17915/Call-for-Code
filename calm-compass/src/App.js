@@ -8,6 +8,7 @@ import WallpaperHeader from './components/WallpaperHeader';
 import Helper from './components/Helper';
 import MedicalHistory from './components/MedicalHistory';
 import Blogs from './components/Blogs';
+import Meetings from './components/Meetings';
 
 function App() {
     return (
@@ -18,8 +19,9 @@ function App() {
                     <Route path='/helper' element={<Helper/>}/>
                     <Route path='/document-uploader' element={<DocumentUploader/>}/>
                     <Route path='/medical-history' element={<MedicalHistory/>}/>
+                    <Route path='/appointments' element={<Meetings/>}/>
                     <Route path='/profile' element={<Profile/>}/>
-                    <Route path='blogs' element={<Blogs/>}/>
+                    <Route path='/blogs' element={<Blogs/>}/>
                 </Route>
             </Routes>
         </BrowserRouter>
